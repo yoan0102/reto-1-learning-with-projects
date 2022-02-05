@@ -1,0 +1,20 @@
+*{
+
+  box-sizing: border-box;
+}
+
+html{
+  max-width: 100%;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #245678;
+  color: white;
+  margin: auto;
+}
+body  h1{
+  text-align: center;
+}
+
