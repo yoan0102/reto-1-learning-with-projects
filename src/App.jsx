@@ -25,11 +25,11 @@ const App = () => {
         <section className='admin__citas'>
           <Formulario setCitas={setCitas} citas={citas} />
         </section>
-        <section className='admin__citas'>
+        <section className='admin__citas cita__list'>
           {
             citas.length > 0
-              ? <h2>Administra tu Cita</h2>
-              : <h2>Agrege una Cita</h2>
+              ? <h2 className='cita__title'>Administra tu Cita</h2>
+              : <h2 className='cita__title'>Agrege una Cita</h2>
           }
           {
             citas.map(cita => (

@@ -57,8 +57,9 @@ const Formulario = ({ setCitas, citas }) => {
       }
       <form onSubmit={handleSubmit}>
         <label>
-          <p>Nombre de Mascota</p>
+          <p className='label__title'>Nombre de Mascota</p>
           <input
+            className='form__input-cita'
             type='text'
             name='mascota'
             placeholder='Nombre Mascota'
@@ -67,8 +68,9 @@ const Formulario = ({ setCitas, citas }) => {
           />
         </label>
         <label>
-          <p>Nombre del Dueño</p>
+          <p className='label__title'>Nombre del Dueño</p>
           <input
+            className='form__input-cita'
             type='text'
             name='propietario'
             placeholder='Nombre del Dueño'
@@ -77,8 +79,9 @@ const Formulario = ({ setCitas, citas }) => {
           />
         </label>
         <label>
-          <p>Fecha</p>
+          <p className='label__title'>Fecha</p>
           <input
+            className='form__input-cita'
             type='date'
             name='fecha'
             placeholder='Fecha de entrada'
@@ -87,8 +90,9 @@ const Formulario = ({ setCitas, citas }) => {
           />
         </label>
         <label>
-          <p>Hora</p>
+          <p className='label__title'>Hora</p>
           <input
+            className='form__input-cita'
             type='time'
             name='hora'
             placeholder='Hora de llegada'
@@ -97,15 +101,16 @@ const Formulario = ({ setCitas, citas }) => {
           />
         </label>
         <label>
-          <p>Síntomas</p>
+          <p className='label__title'>Síntomas</p>
           <textarea
+            className="textarea"
             name='sintomas'
             value={sintomas}
             onChange={handleChange}
           />
         </label>
         <br />
-        <button type='submit'>Agregar Citas</button>
+        <button type='submit' className='btn btn-success'>Agregar Citas</button>
       </form>
     </>
   )
